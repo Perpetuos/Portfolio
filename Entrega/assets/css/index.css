@@ -1,0 +1,85 @@
+.img_container {
+    position: relative;
+    width: max-content;
+    display: flex;
+}
+
+@media screen and (max-width:767px) {
+
+    .img_container {
+        position: relative;
+        width: 30%;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 23px;
+    font-family: arial;
+    font-weight: 700;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.info#saudacao {
+    top: 169px;
+    left: 91px;
+}
+
+.info#nome {
+    top: 207px;
+    left: 135px;
+}
+
+.info#veiculo {
+    top: 240px;
+    left: 203px;
+}
+
+.info#placa {
+    top: 273px;
+    left: 180px;
+}
+
+.info#oficina {
+    top: 306px;
+    left: 200px;
+}
+
+.info#prazo {
+    top: 339px;
+    left: 332px;
+}
+
+.info#data {
+    top: 641px;
+    left: 91px;
+}
+
+.container-button {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+button {
+    padding: 20px;
+    background-color: rgb(42, 109, 186);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(42, 172, 186);
+}
+
+#buttonContainer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}

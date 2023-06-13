@@ -10,12 +10,16 @@
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
   <title>DdavZ</title>
+  <style>
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+</style>
 </head>
 
 <body style="background-color:#0d012c"> 
 
-  <!-- Imagem e texto -->
-  <nav class="navbar navbar-dark bg-dark ">
+  <nav class="navbar navbar-dark bg-dark " style="position: fixed; width: 100%;">
     <a class="navbar-brand" style="margin-left: 30px;" href="#" >
       <img src="/assets/images/logo.png" width="40" class="d-inline-block align-center" alt="" style="margin-right: 10px;">
       DavZ
@@ -25,7 +29,7 @@
         <a class="nav-link active" href="#">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a> 
+        <a id="entrega" class="nav-link" href="#">PRAZO DE ENTREGA</a> 
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">SERVICES</a>
@@ -42,6 +46,15 @@
 
     </ul>
   </nav>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <iframe id="iframe" src="" frameborder="0" style="width: -webkit-fill-available; height: 100vh; margin-top: 100px;"></iframe>
+  </div>
+  <script>
+    document.getElementById("entrega").addEventListener("click", function(){
+      document.getElementById("iframe").src = "/Entrega"
+    })
+  </script>
 
 
   <!-- JavaScript (Opcional) -->

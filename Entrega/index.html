@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTECAR - BRASIL</title>
+    <link rel="shortcut icon" href="/Entrega/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Entrega/assets/css/index.css">
+    <style>
+        ::-webkit-scrollbar {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body style="display: grid; place-items: center;">
+   <div>
+       <div class="img_container">
+           <img  id="backgroundImg" src="/Entrega/assets/images/imagem.png">
+           <div class= "info"  id="saudacao"></div>
+           <div class="info" id="nome"></div>
+           <div class="info" id="veiculo"></div>
+           <div class="info" id="placa"></div>
+           <div class="info" id="oficina"></div>
+           <div class="info" id="prazo"></div>
+           <div class= "info"  id="data"></div>
+       </div>
+   
+       <div id="buttonContainer">
+           <button onclick="reescreverInformacoes()">Inserir Informações</button>
+           <button onclick="gerarImagem()">Gerar Imagem</button>
+       </div>
+   </div>
+
+    <script src="/Entrega/assets/js/html2canvas.min.js"></script>
+    <script src="/Entrega/assets/js/index.js"></script>
+
+</body>
+
+</html>
